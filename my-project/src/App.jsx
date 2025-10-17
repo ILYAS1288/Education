@@ -4,6 +4,7 @@ import { Home } from "./components/Home";
 import { Main1 } from "./components/Main1";
 import { Register } from "./components/Register";
 import { Main2 } from "./components/Main2";
+import { Footer } from "./components/Footer";
 
 
 export default function App() {
@@ -21,6 +22,7 @@ export default function App() {
       <Main1/>
       <Register/>
       <Main2/>
+      <Footer/>
     </BrowserRouter>
   );
 }
