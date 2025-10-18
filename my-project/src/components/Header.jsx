@@ -1,10 +1,27 @@
 import { Link } from "react-router-dom";
-import { useState } from "react";
+import { useState, useRef, useEffect } from "react";
 
 export function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [coursesOpen, setCoursesOpen] = useState(false);
   const [blogOpen, setBlogOpen] = useState(false);
+
+  const coursesRef = useRef(null);
+  const blogRef = useRef(null);
+
+  // close dropdowns when clicking outside
+  useEffect(() => {
+    function handleClickOutside(e) {
+      if (coursesRef.current && !coursesRef.current.contains(e.target)) {
+        setCoursesOpen(false);
+      }
+      if (blogRef.current && !blogRef.current.contains(e.target)) {
+        setBlogOpen(false);
+      }
+    }
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => document.removeEventListener("mousedown", handleClickOutside);
+  }, []);
 
   return (
     <header className="bg-[#F9E0AE] shadow-md">
@@ -14,43 +31,59 @@ export function Header() {
           <img src="/images/Vector.png" alt="Logo" className="h-8 w-8" />
           <span className="text-xl font-bold text-black">Educare</span>
         </div>
+
         {/* Desktop Navigation */}
         <nav className="hidden md:flex gap-6 items-center">
           <Link to="/" className="text-gray-700 hover:text-blue-600 font-medium">Home</Link>
-          {/* Courses Dropdown */}
-          <div className="relative group">
+
+          {/* Courses Dropdown (opens on click) */}
+          <div className="relative" ref={coursesRef}>
             <button
               className="text-gray-700 hover:text-blue-600 font-medium flex items-center gap-1 focus:outline-none"
               type="button"
+              onClick={() => { setCoursesOpen(!coursesOpen); setBlogOpen(false); }}
+              aria-expanded={coursesOpen}
+              aria-haspopup="true"
             >
               Courses
               <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
               </svg>
             </button>
-            <div className="absolute left-0 mt-2 w-40 bg-white border rounded shadow-lg opacity-0 group-hover:opacity-100 group-hover:visible invisible transition-opacity duration-200 z-10">
-              <Link to="/courses/web-development" className="block px-4 py-2 text-gray-700 hover:bg-blue-50">Web Development</Link>
-              <Link to="/courses/data-science" className="block px-4 py-2 text-gray-700 hover:bg-blue-50">Data Science</Link>
-              <Link to="/courses/design" className="block px-4 py-2 text-gray-700 hover:bg-blue-50">Design</Link>
-            </div>
+
+            {coursesOpen && (
+              <div className="absolute left-0 mt-2 w-44 bg-white border rounded shadow-lg z-10">
+                <Link to="/courses/Web-Development" className="block px-4 py-2 text-gray-700 hover:bg-blue-50">Web Development</Link>
+                <Link to="/courses/data-science" className="block px-4 py-2 text-gray-700 hover:bg-blue-50">Data Science</Link>
+                <Link to="/courses/design" className="block px-4 py-2 text-gray-700 hover:bg-blue-50">Design</Link>
+              </div>
+            )}
           </div>
-          {/* Blog Dropdown */}
-          <div className="relative group">
+
+          {/* Blog Dropdown (opens on click) */}
+          <div className="relative" ref={blogRef}>
             <button
               className="text-gray-700 hover:text-blue-600 font-medium flex items-center gap-1 focus:outline-none"
               type="button"
+              onClick={() => { setBlogOpen(!blogOpen); setCoursesOpen(false); }}
+              aria-expanded={blogOpen}
+              aria-haspopup="true"
             >
               Blog
               <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
               </svg>
             </button>
-            <div className="absolute left-0 mt-2 w-40 bg-white border rounded shadow-lg opacity-0 group-hover:opacity-100 group-hover:visible invisible transition-opacity duration-200 z-10">
-              <Link to="/blog/news" className="block px-4 py-2 text-gray-700 hover:bg-blue-50">News</Link>
-              <Link to="/blog/tutorials" className="block px-4 py-2 text-gray-700 hover:bg-blue-50">Tutorials</Link>
-              <Link to="/blog/events" className="block px-4 py-2 text-gray-700 hover:bg-blue-50">Events</Link>
-            </div>
+
+            {blogOpen && (
+              <div className="absolute left-0 mt-2 w-44 bg-white border rounded shadow-lg z-10">
+                <Link to="/blog/news" className="block px-4 py-2 text-gray-700 hover:bg-blue-50">News</Link>
+                <Link to="/blog/tutorials" className="block px-4 py-2 text-gray-700 hover:bg-blue-50">Tutorials</Link>
+                <Link to="/blog/events" className="block px-4 py-2 text-gray-700 hover:bg-blue-50">Events</Link>
+              </div>
+            )}
           </div>
+
           <Link to="/about" className="text-gray-700 hover:text-blue-600 font-medium">About Us</Link>
           <Link
             to="/contact"
@@ -59,6 +92,7 @@ export function Header() {
             Contact Us
           </Link>
         </nav>
+
         {/* Mobile Menu Button */}
         <button
           className="md:hidden text-gray-700 focus:outline-none"
@@ -74,6 +108,7 @@ export function Header() {
           </svg>
         </button>
       </div>
+
       {/* Mobile Navigation */}
       {menuOpen && (
         <nav className="md:hidden bg-white border-t">
@@ -83,6 +118,7 @@ export function Header() {
                 Home
               </Link>
             </li>
+
             {/* Courses Dropdown Mobile */}
             <li>
               <button
@@ -98,7 +134,7 @@ export function Header() {
               {coursesOpen && (
                 <ul className="pl-4">
                   <li>
-                    <Link to="/courses/web-development" className="block py-2 text-gray-700 hover:bg-blue-50" onClick={() => { setMenuOpen(false); setCoursesOpen(false); }}>Web Development</Link>
+                    <Link to="/courses/Web-Development" className="block py-2 text-gray-700 hover:bg-blue-50" onClick={() => { setMenuOpen(false); setCoursesOpen(false); }}>Web Development</Link>
                   </li>
                   <li>
                     <Link to="/courses/data-science" className="block py-2 text-gray-700 hover:bg-blue-50" onClick={() => { setMenuOpen(false); setCoursesOpen(false); }}>Data Science</Link>
@@ -109,6 +145,7 @@ export function Header() {
                 </ul>
               )}
             </li>
+
             {/* Blog Dropdown Mobile */}
             <li>
               <button
@@ -135,6 +172,7 @@ export function Header() {
                 </ul>
               )}
             </li>
+
             <li>
               <Link to="/about" className="block py-2 text-gray-700 hover:text-blue-600 font-medium" onClick={() => setMenuOpen(false)}>
                 About Us
