@@ -6,6 +6,7 @@ import { Register } from "./components/Register";
 import { Main2 } from "./components/Main2";
 import { Footer } from "./components/Footer";
 import { WebDeveploment } from "./components/courses/Web-Development";
+import { About } from "./components/About";
 
 export default function App() {
   return (
@@ -30,7 +31,7 @@ export default function App() {
         </Route>
 
         {/* Other Routes */}
-        <Route path="/about" element={<div>About Us Page</div>} />
+        <Route path="/about" element={<About/>} />
         <Route path="/contact" element={<div>Contact Us Page</div>} />
       </Routes>
       <Main1 />
