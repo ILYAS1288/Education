@@ -7,6 +7,8 @@ import { Main2 } from "./components/Main2";
 import { Footer } from "./components/Footer";
 import { WebDeveploment } from "./components/courses/Web-Development";
 import { About } from "./components/About";
+import { Contact } from "./components/Contact";
+import { DataScience } from "./components/courses/Data-science";
 
 export default function App() {
   return (
@@ -19,7 +21,7 @@ export default function App() {
         {/* Nested Courses Routes */}
         <Route path="/courses">
           <Route path="web-development" element={<WebDeveploment />} />
-          <Route path="data-science" element={<div>Data Science Page</div>} />
+          <Route path="data-science" element={<DataScience/>} />
           <Route path="design" element={<div>Design Page</div>} />
         </Route>
 
@@ -32,7 +34,7 @@ export default function App() {
 
         {/* Other Routes */}
         <Route path="/about" element={<About/>} />
-        <Route path="/contact" element={<div>Contact Us Page</div>} />
+        <Route path="/contact" element={<Contact/>} />
       </Routes>
       <Main1 />
       <Register />
