@@ -1,5 +1,10 @@
+import { Main1 } from "./Main1";
+import { Main2 } from "./Main2";
+import { Register } from "./Register";
+
 export function Home() {
   return (
+    <main>
     <div className="flex flex-col-reverse md:flex-row items-center justify-between max-w-7xl mx-auto px-4 py-12 gap-8">
       {/* Left: Text Content */}
       <div className="w-full md:w-1/2 flex flex-col items-start">
@@ -22,5 +27,9 @@ export function Home() {
       </div>
       
     </div>
+    <Main1 />
+    <Register />
+    <Main2 />
+    </main>
   );
 }

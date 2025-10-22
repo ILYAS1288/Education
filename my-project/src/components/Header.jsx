@@ -53,7 +53,7 @@ export function Header() {
 
             {coursesOpen && (
               <div className="absolute left-0 mt-2 w-44 bg-white border rounded shadow-lg z-10">
-                <Link to="/courses/Web-Development" className="block px-4 py-2 text-gray-700 hover:bg-blue-50">Web Development</Link>
+                <Link to="/courses/Web-Development" className="block px-4 py-2 text-gray-700 hover:bg-blue-50">Web Development </Link>
                 <Link to="/courses/data-science" className="block px-4 py-2 text-gray-700 hover:bg-blue-50">Data Science</Link>
                 <Link to="/courses/design" className="block px-4 py-2 text-gray-700 hover:bg-blue-50">Design</Link>
               </div>

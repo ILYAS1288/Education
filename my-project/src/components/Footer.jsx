@@ -24,7 +24,7 @@ export function Footer() {
                         <li><a href="/contact" className="hover:text-[#C24914] transition">Contact</a></li>
                     </ul>
                 </div>
-                
+                  
                 {/* Social Media */}
                 <div className="flex flex-col items-center md:items-start">
                     <h2 className="text-lg font-bold mb-4">Follow Us</h2>
