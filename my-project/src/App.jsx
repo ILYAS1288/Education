@@ -1,14 +1,15 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { Header } from "./components/Header";
 import { Home } from "./components/Home";
-import { Main1 } from "./components/Main1";
-import { Register } from "./components/Register";
-import { Main2 } from "./components/Main2";
 import { Footer } from "./components/Footer";
 import { WebDeveploment } from "./components/courses/Web-Development";
 import { About } from "./components/About";
 import { Contact } from "./components/Contact";
 import { DataScience } from "./components/courses/Data-science";
+import { Design } from "./components/courses/Design";
+import News from "./blog/News";
+import { Event } from "./blog/Event";
+import { Tutorials } from "./blog/Tutorials";
 
 export default function App() {
   return (
@@ -21,24 +22,22 @@ export default function App() {
         {/* Nested Courses Routes */}
         <Route path="/courses">
           <Route path="web-development" element={<WebDeveploment />} />
-          <Route path="data-science" element={<DataScience/>} />
-          <Route path="design" element={<div>Design Page</div>} />
+          <Route path="data-science" element={<DataScience />} />
+          <Route path="design" element={<Design />} />
         </Route>
 
         {/* Nested Blog Routes */}
         <Route path="/blog">
-          <Route path="news" element={<div>News Page</div>} />
-          <Route path="tutorials" element={<div>Tutorials Page</div>} />
-          <Route path="events" element={<div>Events Page</div>} />
+          <Route path="news" element={<News />} />
+          <Route path="tutorials" element={<Tutorials />} />
+          <Route path="events" element={<Event />} />
         </Route>
 
         {/* Other Routes */}
-        <Route path="/about" element={<About/>} />
-        <Route path="/contact" element={<Contact/>} />
+        <Route path="/about" element={<About />} />
+        <Route path="/contact" element={<Contact />} />
       </Routes>
-      <Main1 />
-      <Register />
-      <Main2 />
+
       <Footer />
     </BrowserRouter>
   );
