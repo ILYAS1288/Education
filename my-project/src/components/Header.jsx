@@ -134,7 +134,7 @@ export function Header() {
               {coursesOpen && (
                 <ul className="pl-4">
                   <li>
-                    <Link to="/courses/Web-Development" className="block py-2 text-gray-700 hover:bg-blue-50" onClick={() => { setMenuOpen(false); setCoursesOpen(false); }}>Web Development</Link>
+                    <Link to="/courses/web-development" className="block py-2 text-gray-700 hover:bg-blue-50" onClick={() => { setMenuOpen(false); setCoursesOpen(false); }}>Web Development</Link>
                   </li>
                   <li>
                     <Link to="/courses/data-science" className="block py-2 text-gray-700 hover:bg-blue-50" onClick={() => { setMenuOpen(false); setCoursesOpen(false); }}>Data Science</Link>

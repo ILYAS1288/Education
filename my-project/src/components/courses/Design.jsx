@@ -22,7 +22,7 @@ export function Design() {
                 {/* Right: Image */}
                 <div className="w-full md:w-1/2">
                     <img
-                        src="/images/design-course.png"
+                        src="/images/i1.png"
                         alt="Design Course"
                         className="w-full h-auto rounded-lg "
                     />
