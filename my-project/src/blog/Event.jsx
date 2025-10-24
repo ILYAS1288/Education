@@ -1,6 +1,6 @@
 export function Event() {
     return (
-        <div className="max-w-7xl mx-auto p-6 bg-white rounded-lg shadow">
+        <div className="max-w-7xl  mt-12  mx-auto p-6 bg-white rounded-lg shadow">
             <h1 className="text-3xl font-bold mb-4">Upcoming Events</h1>
             <div className="space-y-6">
                 {/* Sample Event */}

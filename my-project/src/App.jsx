@@ -14,7 +14,7 @@ import { Tutorials } from "./blog/Tutorials";
 export default function App() {
   return (
     <BrowserRouter>
-      <Header />
+      <Header />                                   
       <Routes>
         {/* Root/Home Route */}
         <Route path="/" element={<Home />} />
