@@ -21,7 +21,7 @@ export function Home() {
           Start learning
         </button>
       </div>
-      {/* Right: Image */}
+    
       <div className="w-full md:w-1/2 flex justify-center mb-8 md:mb-0">
         <img src="/images/V.png" alt="Learning" className="max-w-xs md:max-w-md w-full h-auto rounded-lg " />
       </div>

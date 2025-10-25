@@ -5,7 +5,7 @@ export function Footer() {
                 {/* Logo and Description */}
                 <div className="flex flex-col items-center md:items-start">
                     <img
-                        src="/images/Vector.png" // Replace with your logo URL
+                        src="/images/Vector.png" 
                         alt="Logo"
                         className="h-12 w-12 mb-4"
                     />

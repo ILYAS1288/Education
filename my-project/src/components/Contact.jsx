@@ -12,11 +12,11 @@ export function Contact() {
                         We would love to hear from you! Whether you have questions about our courses, need support, or just want to say hello, feel free to reach out.
                     </p>
                     <p className="text-gray-700 text-lg mb-6">
-                        You can contact us via email at 
-                        <a href="mailto:info@educare.com" className="text-[#C24914] underline"> info@educare.com </a> 
-                        or call us at 
+                        You can contact us via email at
+                        <a href="mailto:info@educare.com" className="text-[#C24914] underline"> info@educare.com </a>
+                        or call us at
                         <a href="tel:+1234567890" className="text-[#C24914] underline"> +123-456-7890</a>.
-                    </p>
+                     </p>
                 </div>
 
                 {/* Right: Contact Form */}
