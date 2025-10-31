@@ -19,7 +19,7 @@ export function Contact() {
                      </p>
                 </div>
 
-                {/* Right: Contact Form */}
+                    
                 <div className="w-full md:w-1/2 bg-white p-6 rounded-lg shadow">
                     <h2 className="text-2xl font-bold text-[#C24914] mb-4">Send Us a Message</h2>
                     <form className="flex flex-col gap-4">
@@ -35,7 +35,7 @@ export function Contact() {
                         />
                         <textarea
                             placeholder="Your Message"
-                            rows="5"
+                             rows="5"
                             className="border rounded px-4 py-2 focus:outline-none focus:ring-2 focus:ring-[#C24914]"
                         ></textarea>
                         <button

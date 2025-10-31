@@ -27,7 +27,7 @@ export default function News() {
                     </button>
                 </div>
 
-                {/* News Article 3 */}
+              
                 <div className="border-b pb-6">
                     <h2 className="text-2xl font-bold mb-2">New Learning Platform Features</h2>
                     <p className="text-gray-600">Date: May 30, 2024</p>
