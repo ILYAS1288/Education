@@ -10,6 +10,7 @@ import { Design } from "./components/courses/Design";
 import News from "./blog/News";
 import { Event } from "./blog/Event";
 import { Tutorials } from "./blog/Tutorials";
+import { Login } from "./blog/Login";
 
 export default function App() {
   return (
@@ -29,6 +30,7 @@ export default function App() {
           <Route path="news" element={<News />} />
           <Route path="tutorials" element={<Tutorials />} />
           <Route path="events" element={<Event />} />
+          <Route path="login" element={<Login/>} />  
         </Route>
         {/* Other Routes */}
         <Route path="/about" element={<About />} />

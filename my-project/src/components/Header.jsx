@@ -80,6 +80,7 @@ export function Header() {
                 <Link to="/blog/news" className="block px-4 py-2 text-gray-700 hover:bg-blue-50">News</Link>
                 <Link to="/blog/tutorials" className="block px-4 py-2 text-gray-700 hover:bg-blue-50">Tutorials</Link>
                 <Link to="/blog/events" className="block px-4 py-2 text-gray-700 hover:bg-blue-50">Events</Link>
+                   <Link to="/blog/login" className="block px-4 py-2 text-gray-700 hover:bg-blue-50">Login</Link>
               </div>
             )}
           </div>
@@ -168,6 +169,9 @@ export function Header() {
                   </li>
                   <li>
                     <Link to="/blog/events" className="block py-2 text-gray-700 hover:bg-blue-50" onClick={() => { setMenuOpen(false); setBlogOpen(false); }}>Events</Link>
+                  </li>
+                  <li>
+                    <Link to="/blog/login" className="block py-2 text-gray-700 hover:bg-blue-50" onClick={() => { setMenuOpen(false); setBlogOpen(false); }}>Login</Link>
                   </li>
                 </ul>
               )}
