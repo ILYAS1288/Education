@@ -17,9 +17,7 @@ export function Contact() {
                         or call us at
                         <a href="tel:+1234567890" className="text-[#C24914] underline"> +123-456-7890</a>.
                      </p>
-                </div>
-
-                    
+                </div>        
                 <div className="w-full md:w-1/2 bg-white p-6 rounded-lg shadow">
                     <h2 className="text-2xl font-bold text-[#C24914] mb-4">Send Us a Message</h2>
                     <form className="flex flex-col gap-4">
