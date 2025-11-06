@@ -109,7 +109,7 @@ export function Header() {
           </svg>
         </button>
       </div>
-
+                
       {/* Mobile Navigation */}
       {menuOpen && (
         <nav className="md:hidden bg-white border-t">
@@ -135,13 +135,13 @@ export function Header() {
               {coursesOpen && (
                 <ul className="pl-4">
                   <li>
-                    <Link to="/courses/web-development" className="block py-2 text-gray-700 hover:bg-blue-50" onClick={() => { setMenuOpen(false); setCoursesOpen(false); }}>Web Development</Link>
+                    <Link to="/courses/web-development" className="block py-2 text-gray-700 hover:bg-blue-50" onClick={() => { setMenuOpen(); setCoursesOpen(false); }}>Web Development</Link>
                   </li>
                   <li>
-                    <Link to="/courses/data-science" className="block py-2 text-gray-700 hover:bg-blue-50" onClick={() => { setMenuOpen(false); setCoursesOpen(false); }}>Data Science</Link>
+                    <Link to="/courses/data-science" className="block py-2 text-gray-700 hover:bg-blue-50" onClick={() => { setMenuOpen(); setCoursesOpen(false); }}>Data Science</Link>
                   </li>
                   <li>
-                    <Link to="/courses/design" className="block py-2 text-gray-700 hover:bg-blue-50" onClick={() => { setMenuOpen(false); setCoursesOpen(false); }}>Design</Link>
+                    <Link to="/courses/design" className="block py-2 text-gray-700 hover:bg-blue-50" onClick={() => { setMenuOpen(); setCoursesOpen(false); }}>Design</Link>
                   </li>
                 </ul>
               )}

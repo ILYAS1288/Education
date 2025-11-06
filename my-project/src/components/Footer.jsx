@@ -53,7 +53,6 @@ export function Footer() {
                     </div>   
                 </div>
             </div>
-
             {/* Footer Bottom */}
             <div className="mt-8 text-center text-sm border-t border-gray-300 pt-4">
                 <p>&copy; {new Date().getFullYear()} Educare. All rights reserved.</p>

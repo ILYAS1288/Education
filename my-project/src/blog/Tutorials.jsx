@@ -11,7 +11,6 @@ export function Tutorials() {
                         This tutorial covers the basics of React, including components, state management, and hooks to help you build dynamic web applications.
                     </p>
                 </div>
-
                 {/* Sample Tutorial */}
                 <div className="border-b pb-4">
                     <h2 className="text-2xl font-semibold">Introduction to Machine Learning</h2>
@@ -20,7 +19,6 @@ export function Tutorials() {
                         Learn the fundamentals of machine learning, including supervised and unsupervised learning techniques, and how to implement them using Python.
                     </p>
                 </div>
-
                 {/* Sample Tutorial */}
                 <div className="border-b pb-4">
                     <h2 className="text-2xl font-semibold">Design Principles for Beginners</h2>
