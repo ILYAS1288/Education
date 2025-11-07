@@ -31,7 +31,7 @@ export function Main2() {
           Community: Start learning from your experience and grow together.
         </p>
 
-        {/* Button */}
+        {/* Call to Action Button */}
         <button className="mt-6 bg-[#C24914] text-white px-6 py-3 rounded-md shadow hover:bg-[#a63a0b] transition">
           Join Community
         </button>
@@ -40,15 +40,13 @@ export function Main2() {
         <div className="relative mt-12 w-full h-64 md:h-80">
           {/* Top Left Image */}
         
-
-          {/* Bottom Left Image */}
-          <img                                                     
+        <img                                                     
             src="/images/E3.png"
             alt="Bottom Left"
             className="absolute bottom-48 left-24 w-24 h-24 md:w-32 md:h-32 rounded-lg "
           />
 
-          {/* Bottom Right Image */}
+  
           <img
             src="/images/E4.png"
             alt="Bottom Right"

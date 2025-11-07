@@ -74,7 +74,7 @@ export function Header() {
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
               </svg>
             </button>
-
+              
             {blogOpen && (
               <div className="absolute left-0 mt-2 w-44 bg-white border rounded shadow-lg z-10">
                 <Link to="/blog/news" className="block px-4 py-2 text-gray-700 hover:bg-blue-50">News</Link>
