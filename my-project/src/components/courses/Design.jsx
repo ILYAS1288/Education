@@ -18,7 +18,6 @@ export function Design() {
                         Enroll Now
                     </button>
                 </div>
-
                 {/* Right: Image */}
                 <div className="w-full md:w-1/2">
                     <img
@@ -28,7 +27,6 @@ export function Design() {
                     />
                 </div>
             </div>
-
             {/* Step-by-Step Roadmap */}
             <div className="mt-12">
                 <h2 className="text-2xl md:text-4xl font-bold text-center text-[#C24914] mb-8">

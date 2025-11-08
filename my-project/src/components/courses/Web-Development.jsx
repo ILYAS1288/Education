@@ -28,7 +28,6 @@ export function WebDeveploment() {
                     />
                 </div>
             </div>
-
             {/* Step-by-Step Roadmap */}
             <div className="mt-12">
                 <h2 className="text-2xl md:text-4xl font-bold text-center text-[#C24914] mb-8">
@@ -73,8 +72,6 @@ export function WebDeveploment() {
                     </div>
                 </div>
             </div>
-
-            {/* Call-to-Action Section */}
             <div className="mt-12 bg-[#F9E0AE] p-8 rounded-lg shadow-lg text-center">
                 <h2 className="text-2xl md:text-4xl font-bold text-[#C24914] mb-4">
                     Ready to Build Amazing Websites?
