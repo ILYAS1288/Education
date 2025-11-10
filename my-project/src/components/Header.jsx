@@ -59,7 +59,6 @@ export function Header() {
               </div>
             )}
           </div>
-
           {/* Blog Dropdown (opens on click) */}
           <div className="relative" ref={blogRef}>
             <button
@@ -93,7 +92,6 @@ export function Header() {
             Contact Us
           </Link>
         </nav>
-
         {/* Mobile Menu Button */}
         <button
           className="md:hidden text-gray-700 focus:outline-none"
@@ -108,8 +106,7 @@ export function Header() {
             )}
           </svg>
         </button>
-      </div>
-                
+      </div>               
       {/* Mobile Navigation */}
       {menuOpen && (
         <nav className="md:hidden bg-white border-t">
@@ -146,7 +143,6 @@ export function Header() {
                 </ul>
               )}
             </li>
-
             {/* Blog Dropdown Mobile */}
             <li>
               <button

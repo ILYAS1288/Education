@@ -24,100 +24,173 @@ export function DataScience() {
                     <img
                         src="/images/V.png"
                         alt="Data Science Course"
-                        className="w-full h-auto rounded-lg "
+                        className="w-full h-auto rounded-lg shadow-lg"
                     />
-                </div>
-            </div>
-
-            {/* Key Benefits Section */}
-            <div className="mt-12">
-                <h2 className="text-2xl md:text-4xl font-bold text-center text-[#C24914] mb-8">
-                    Why Choose Our Data Science Course?
-                </h2>
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                    <div className="bg-white p-6 rounded-lg shadow">
-                        <h3 className="text-xl font-bold mb-4">Comprehensive Curriculum</h3>
-                        <p className="text-gray-700">
-                            Learn everything from data analysis and visualization to machine learning and big data technologies.
-                        </p>
-                    </div>
-                    <div className="bg-white p-6 rounded-lg shadow">
-                        <h3 className="text-xl font-bold mb-4">Hands-On Projects</h3>
-                        <p className="text-gray-700">
-                            Work on real-world datasets and projects to gain practical experience and build your portfolio.
-                        </p>
-                    </div>
-                    <div className="bg-white p-6 rounded-lg shadow">
-                        <h3 className="text-xl font-bold mb-4">Expert Instructors</h3>
-                        <p className="text-gray-700">
-                            Learn from industry professionals with years of experience in data science and analytics.
-                        </p>
-                    </div>
-                    <div className="bg-white p-6 rounded-lg shadow">
-                        <h3 className="text-xl font-bold mb-4">Career Support</h3>
-                        <p className="text-gray-700">
-                            Get access to career guidance, resume reviews, and interview preparation to land your dream job.
-                        </p>
-                    </div>
-                    <div className="bg-white p-6 rounded-lg shadow">
-                        <h3 className="text-xl font-bold mb-4">Flexible Learning</h3>
-                        <p className="text-gray-700">
-                            Learn at your own pace with our online modules and live sessions tailored to your schedule.
-                        </p>
-                    </div>
-                    <div className="bg-white p-6 rounded-lg shadow">
-                        <h3 className="text-xl font-bold mb-4">Certification</h3>
-                        <p className="text-gray-700">
-                            Earn a recognized certificate upon course completion to showcase your skills to employers.
-                        </p>
-                    </div>
                 </div>
             </div>
 
             {/* Step-by-Step Roadmap */}
             <div className="mt-12">
                 <h2 className="text-2xl md:text-4xl font-bold text-center text-[#C24914] mb-8">
-                    Step-by-Step Roadmap to Becoming a Data Scientist
+                    Comprehensive Data Science Roadmap
                 </h2>
                 <div className="space-y-8">
-                    <div className="bg-white p-6 rounded-lg shadow">
-                        <h3 className="text-xl font-bold mb-4">Step 1: Learn the Basics</h3>
-                        <p className="text-gray-700">
-                            Start with the fundamentals of programming (Python or R), statistics, and data analysis. Build a strong foundation in these areas before diving deeper.
-                        </p>
+                    {/* Step 1: Programming & Statistics */}
+                    <div className="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow">
+                        <h3 className="text-xl font-bold mb-4 text-[#C24914]">Step 1: Programming & Statistics Foundations</h3>
+                        <div className="space-y-4">
+                            <div>
+                                <h4 className="font-semibold mb-2">Python Programming</h4>
+                                <ul className="list-disc pl-5 text-gray-700">
+                                    <li>Variables, data structures, and control flow</li>
+                                    <li>Functions, classes, and object-oriented programming</li>
+                                    <li>Python libraries (NumPy, Pandas basics)</li>
+                                    <li>File handling and data I/O operations</li>
+                                    <li>Error handling and debugging</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h4 className="font-semibold mb-2">Statistics & Mathematics</h4>
+                                <ul className="list-disc pl-5 text-gray-700">
+                                    <li>Descriptive statistics and probability theory</li>
+                                    <li>Inferential statistics and hypothesis testing</li>
+                                    <li>Linear algebra fundamentals</li>
+                                    <li>Calculus basics for machine learning</li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
-                    <div className="bg-white p-6 rounded-lg shadow">
-                        <h3 className="text-xl font-bold mb-4">Step 2: Master Data Manipulation</h3>
-                        <p className="text-gray-700">
-                            Learn how to clean, preprocess, and manipulate data using libraries like Pandas and NumPy. Understand how to handle missing data and outliers.
-                        </p>
+
+                    {/* Step 2: Data Manipulation & Analysis */}
+                    <div className="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow">
+                        <h3 className="text-xl font-bold mb-4 text-[#C24914]">Step 2: Data Manipulation & Analysis</h3>
+                        <div className="space-y-4">
+                            <div>
+                                <h4 className="font-semibold mb-2">Data Preprocessing</h4>
+                                <ul className="list-disc pl-5 text-gray-700">
+                                    <li>Data cleaning and quality assessment</li>
+                                    <li>Handling missing values and outliers</li>
+                                    <li>Feature scaling and normalization</li>
+                                    <li>Feature engineering and selection</li>
+                                    <li>Data transformation techniques</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h4 className="font-semibold mb-2">Exploratory Data Analysis</h4>
+                                <ul className="list-disc pl-5 text-gray-700">
+                                    <li>Statistical analysis and summary metrics</li>
+                                    <li>Correlation analysis and pattern detection</li>
+                                    <li>Time series analysis fundamentals</li>
+                                    <li>Data profiling and reporting</li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
-                    <div className="bg-white p-6 rounded-lg shadow">
-                        <h3 className="text-xl font-bold mb-4">Step 3: Data Visualization</h3>
-                        <p className="text-gray-700">
-                            Use tools like Matplotlib, Seaborn, and Tableau to create insightful visualizations that help communicate your findings effectively.
-                        </p>
+
+                    {/* Step 3: Data Visualization */}
+                    <div className="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow">
+                        <h3 className="text-xl font-bold mb-4 text-[#C24914]">Step 3: Advanced Data Visualization</h3>
+                        <div className="space-y-4">
+                            <div>
+                                <h4 className="font-semibold mb-2">Visualization Tools</h4>
+                                <ul className="list-disc pl-5 text-gray-700">
+                                    <li>Matplotlib for static visualizations</li>
+                                    <li>Seaborn for statistical graphics</li>
+                                    <li>Plotly for interactive dashboards</li>
+                                    <li>Power BI and Tableau for business intelligence</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h4 className="font-semibold mb-2">Visualization Best Practices</h4>
+                                <ul className="list-disc pl-5 text-gray-700">
+                                    <li>Chart selection and design principles</li>
+                                    <li>Interactive visualization techniques</li>
+                                    <li>Storytelling with data</li>
+                                    <li>Creating effective dashboards</li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
-                    <div className="bg-white p-6 rounded-lg shadow">
-                        <h3 className="text-xl font-bold mb-4">Step 4: Machine Learning</h3>
-                        <p className="text-gray-700">
-                            Dive into machine learning algorithms, including regression, classification, clustering, and deep learning. Use libraries like Scikit-learn and TensorFlow.
-                        </p>
+
+                    {/* Step 4: Machine Learning */}
+                    <div className="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow">
+                        <h3 className="text-xl font-bold mb-4 text-[#C24914]">Step 4: Machine Learning & AI</h3>
+                        <div className="space-y-4">
+                            <div>
+                                <h4 className="font-semibold mb-2">Supervised Learning</h4>
+                                <ul className="list-disc pl-5 text-gray-700">
+                                    <li>Linear and logistic regression</li>
+                                    <li>Decision trees and random forests</li>
+                                    <li>Support vector machines</li>
+                                    <li>Neural networks fundamentals</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h4 className="font-semibold mb-2">Unsupervised Learning</h4>
+                                <ul className="list-disc pl-5 text-gray-700">
+                                    <li>Clustering algorithms (K-means, hierarchical)</li>
+                                    <li>Dimensionality reduction (PCA, t-SNE)</li>
+                                    <li>Anomaly detection</li>
+                                    <li>Association rule learning</li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
-                    <div className="bg-white p-6 rounded-lg shadow">
-                        <h3 className="text-xl font-bold mb-4">Step 5: Big Data and Cloud</h3>
-                        <p className="text-gray-700">
-                            Learn about big data technologies like Hadoop and Spark, and explore cloud platforms like AWS and Google Cloud for scalable data solutions.
-                        </p>
+
+                    {/* Step 5: Big Data & Cloud Computing */}
+                    <div className="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow">
+                        <h3 className="text-xl font-bold mb-4 text-[#C24914]">Step 5: Big Data & Cloud Technologies</h3>
+                        <div className="space-y-4">
+                            <div>
+                                <h4 className="font-semibold mb-2">Big Data Processing</h4>
+                                <ul className="list-disc pl-5 text-gray-700">
+                                    <li>Apache Hadoop ecosystem</li>
+                                    <li>Apache Spark for large-scale data</li>
+                                    <li>SQL and NoSQL databases</li>
+                                    <li>Data warehousing concepts</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h4 className="font-semibold mb-2">Cloud Platforms</h4>
+                                <ul className="list-disc pl-5 text-gray-700">
+                                    <li>AWS data services</li>
+                                    <li>Google Cloud Platform tools</li>
+                                    <li>Azure ML services</li>
+                                    <li>Cloud deployment strategies</li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
-                    <div className="bg-white p-6 rounded-lg shadow">
-                        <h3 className="text-xl font-bold mb-4">Step 6: Build a Portfolio</h3>
-                        <p className="text-gray-700">
-                            Work on real-world projects and create a portfolio to showcase your skills to potential employers.
-                        </p>
+
+                    {/* Step 6: Advanced Topics & Career Development */}
+                    <div className="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow">
+                        <h3 className="text-xl font-bold mb-4 text-[#C24914]">Step 6: Advanced Topics & Career Development</h3>
+                        <div className="space-y-4">
+                            <div>
+                                <h4 className="font-semibold mb-2">Advanced Topics</h4>
+                                <ul className="list-disc pl-5 text-gray-700">
+                                    <li>Deep learning architectures</li>
+                                    <li>Natural language processing</li>
+                                    <li>Computer vision basics</li>
+                                    <li>Time series forecasting</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h4 className="font-semibold mb-2">Professional Development</h4>
+                                <ul className="list-disc pl-5 text-gray-700">
+                                    <li>Building a data science portfolio</li>
+                                    <li>Industry project experience</li>
+                                    <li>Interview preparation</li>
+                                    <li>Career path guidance</li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
+
+            {/* Benefits Section - Keep existing benefits section */}
+            {/* ...existing benefits section code... */}
 
             {/* Call-to-Action Section */}
             <div className="mt-12 bg-[#F9E0AE] p-8 rounded-lg shadow-lg text-center">

@@ -28,47 +28,159 @@ export function WebDeveploment() {
                     />
                 </div>
             </div>
-            {/* Step-by-Step Roadmap */}
+            {/* Enhanced Step-by-Step Roadmap */}
             <div className="mt-12">
                 <h2 className="text-2xl md:text-4xl font-bold text-center text-[#C24914] mb-8">
-                    Step-by-Step Roadmap to Becoming a Web Developer
+                    Comprehensive Web Development Roadmap
                 </h2>
                 <div className="space-y-8">
-                    <div className="bg-white p-6 rounded-lg shadow">
-                        <h3 className="text-xl font-bold mb-4">Step 1: Learn the Basics</h3>
-                        <p className="text-gray-700">
-                            Start with the fundamentals of web development, including HTML, CSS, and JavaScript. Understand how these technologies work together to create websites.
-                        </p>
+                    {/* Step 1: Fundamentals */}
+                    <div className="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow">
+                        <h3 className="text-xl font-bold mb-4 text-[#C24914]">Step 1: Web Development Fundamentals</h3>
+                        <div className="space-y-4">
+                            <div>
+                                <h4 className="font-semibold mb-2">HTML5</h4>
+                                <ul className="list-disc pl-5 text-gray-700">
+                                    <li>Document structure and semantic markup</li>
+                                    <li>Forms and validation</li>
+                                    <li>Media elements (audio, video, canvas)</li>
+                                    <li>SEO best practices</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h4 className="font-semibold mb-2">CSS3</h4>
+                                <ul className="list-disc pl-5 text-gray-700">
+                                    <li>Selectors and specificity</li>
+                                    <li>Box model and layout</li>
+                                    <li>Flexbox and Grid systems</li>
+                                    <li>Animations and transitions</li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
-                    <div className="bg-white p-6 rounded-lg shadow">
-                        <h3 className="text-xl font-bold mb-4">Step 2: Master Responsive Design</h3>
-                        <p className="text-gray-700">
-                            Learn how to create mobile-friendly websites using CSS frameworks like Bootstrap and Tailwind CSS. Understand the principles of responsive design.
-                        </p>
+
+                    {/* Step 2: Advanced CSS & Responsive Design */}
+                    <div className="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow">
+                        <h3 className="text-xl font-bold mb-4 text-[#C24914]">Step 2: Advanced CSS & Responsive Design</h3>
+                        <div className="space-y-4">
+                            <div>
+                                <h4 className="font-semibold mb-2">Responsive Design Principles</h4>
+                                <ul className="list-disc pl-5 text-gray-700">
+                                    <li>Mobile-first approach</li>
+                                    <li>Media queries and breakpoints</li>
+                                    <li>Fluid layouts and typography</li>
+                                    <li>CSS frameworks (Bootstrap, Tailwind CSS)</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h4 className="font-semibold mb-2">CSS Preprocessors</h4>
+                                <ul className="list-disc pl-5 text-gray-700">
+                                    <li>SASS/SCSS fundamentals</li>
+                                    <li>Variables and mixins</li>
+                                    <li>Nesting and partials</li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
-                    <div className="bg-white p-6 rounded-lg shadow">
-                        <h3 className="text-xl font-bold mb-4">Step 3: Dive into JavaScript</h3>
-                        <p className="text-gray-700">
-                            Master JavaScript to add interactivity to your websites. Learn about DOM manipulation, events, and ES6+ features.
-                        </p>
+
+                    {/* Step 3: JavaScript & DOM */}
+                    <div className="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow">
+                        <h3 className="text-xl font-bold mb-4 text-[#C24914]">Step 3: JavaScript Mastery</h3>
+                        <div className="space-y-4">
+                            <div>
+                                <h4 className="font-semibold mb-2">Core JavaScript</h4>
+                                <ul className="list-disc pl-5 text-gray-700">
+                                    <li>Variables, data types, and operators</li>
+                                    <li>Functions and scope</li>
+                                    <li>Arrays and objects</li>
+                                    <li>Promises and async/await</li>
+                                    <li>ES6+ features</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h4 className="font-semibold mb-2">DOM Manipulation</h4>
+                                <ul className="list-disc pl-5 text-gray-700">
+                                    <li>Selecting and modifying elements</li>
+                                    <li>Event handling</li>
+                                    <li>Form validation</li>
+                                    <li>AJAX and Fetch API</li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
-                    <div className="bg-white p-6 rounded-lg shadow">
-                        <h3 className="text-xl font-bold mb-4">Step 4: Learn Frontend Frameworks</h3>
-                        <p className="text-gray-700">
-                            Explore popular frontend frameworks like React, Angular, or Vue.js to build dynamic and scalable web applications.
-                        </p>
+
+                    {/* Step 4: Frontend Frameworks */}
+                    <div className="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow">
+                        <h3 className="text-xl font-bold mb-4 text-[#C24914]">Step 4: Modern Frontend Development</h3>
+                        <div className="space-y-4">
+                            <div>
+                                <h4 className="font-semibold mb-2">React.js</h4>
+                                <ul className="list-disc pl-5 text-gray-700">
+                                    <li>Components and props</li>
+                                    <li>State management (Context, Redux)</li>
+                                    <li>Hooks and custom hooks</li>
+                                    <li>Routing and navigation</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h4 className="font-semibold mb-2">Development Tools</h4>
+                                <ul className="list-disc pl-5 text-gray-700">
+                                    <li>Package managers (npm, yarn)</li>
+                                    <li>Bundlers (Webpack, Vite)</li>
+                                    <li>Developer tools and debugging</li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
-                    <div className="bg-white p-6 rounded-lg shadow">
-                        <h3 className="text-xl font-bold mb-4">Step 5: Backend Development</h3>
-                        <p className="text-gray-700">
-                            Learn backend technologies like Node.js, Express, and databases (SQL and NoSQL). Understand how to build APIs and manage server-side logic.
-                        </p>
+
+                    {/* Step 5: Backend Development */}
+                    <div className="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow">
+                        <h3 className="text-xl font-bold mb-4 text-[#C24914]">Step 5: Backend Development</h3>
+                        <div className="space-y-4">
+                            <div>
+                                <h4 className="font-semibold mb-2">Node.js & Express</h4>
+                                <ul className="list-disc pl-5 text-gray-700">
+                                    <li>Server-side JavaScript</li>
+                                    <li>RESTful API development</li>
+                                    <li>Authentication and authorization</li>
+                                    <li>Error handling and middleware</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h4 className="font-semibold mb-2">Databases</h4>
+                                <ul className="list-disc pl-5 text-gray-700">
+                                    <li>MongoDB (NoSQL)</li>
+                                    <li>PostgreSQL (SQL)</li>
+                                    <li>Database design and modeling</li>
+                                    <li>ORMs and query builders</li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
-                    <div className="bg-white p-6 rounded-lg shadow">
-                        <h3 className="text-xl font-bold mb-4">Step 6: Version Control and Deployment</h3>
-                        <p className="text-gray-700">
-                            Use Git and GitHub for version control. Learn how to deploy your websites using platforms like Netlify, Vercel, or Heroku.
-                        </p>
+
+                    {/* Step 6: Deployment & Best Practices */}
+                    <div className="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow">
+                        <h3 className="text-xl font-bold mb-4 text-[#C24914]">Step 6: Deployment & Professional Skills</h3>
+                        <div className="space-y-4">
+                            <div>
+                                <h4 className="font-semibold mb-2">Version Control & Deployment</h4>
+                                <ul className="list-disc pl-5 text-gray-700">
+                                    <li>Git fundamentals and workflows</li>
+                                    <li>GitHub collaboration</li>
+                                    <li>CI/CD pipelines</li>
+                                    <li>Cloud platforms (AWS, Vercel, Heroku)</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h4 className="font-semibold mb-2">Professional Development</h4>
+                                <ul className="list-disc pl-5 text-gray-700">
+                                    <li>Code optimization and best practices</li>
+                                    <li>Testing and debugging</li>
+                                    <li>Security considerations</li>
+                                    <li>Portfolio development</li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
