@@ -18,56 +18,225 @@ export function Design() {
                         Enroll Now
                     </button>
                 </div>
+
                 {/* Right: Image */}
                 <div className="w-full md:w-1/2">
                     <img
                         src="/images/i1.png"
                         alt="Design Course"
-                        className="w-full h-auto rounded-lg "
+                        className="w-full h-auto rounded-lg shadow-lg"
                     />
                 </div>
             </div>
-            {/* Step-by-Step Roadmap */}
+
+            {/* Comprehensive Step-by-Step Roadmap */}
             <div className="mt-12">
                 <h2 className="text-2xl md:text-4xl font-bold text-center text-[#C24914] mb-8">
-                    Step-by-Step Roadmap to Becoming a Designer
+                    Comprehensive Design Roadmap
                 </h2>
                 <div className="space-y-8">
-                    <div className="bg-white p-6 rounded-lg shadow">
-                        <h3 className="text-xl font-bold mb-4">Step 1: Learn the Basics of Design</h3>
-                        <p className="text-gray-700">
-                            Start with the fundamentals of design, including color theory, typography, and layout principles. Understand how these elements work together to create visually appealing designs.
-                        </p>
+                    {/* Step 1: Design Fundamentals */}
+                    <div className="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow">
+                        <h3 className="text-xl font-bold mb-4 text-[#C24914]">Step 1: Design Fundamentals & Theory</h3>
+                        <div className="space-y-4">
+                            <div>
+                                <h4 className="font-semibold mb-2">Color Theory</h4>
+                                <ul className="list-disc pl-5 text-gray-700">
+                                    <li>Color models (RGB, CMYK, HSL)</li>
+                                    <li>Color harmonies and psychology</li>
+                                    <li>Contrast and accessibility</li>
+                                    <li>Mood and emotion through color</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h4 className="font-semibold mb-2">Typography</h4>
+                                <ul className="list-disc pl-5 text-gray-700">
+                                    <li>Font families and typeface selection</li>
+                                    <li>Font pairing and hierarchy</li>
+                                    <li>Kerning, leading, and spacing</li>
+                                    <li>Web typography best practices</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h4 className="font-semibold mb-2">Design Principles</h4>
+                                <ul className="list-disc pl-5 text-gray-700">
+                                    <li>Balance and composition</li>
+                                    <li>Emphasis and focal points</li>
+                                    <li>Proportion and scale</li>
+                                    <li>Unity and harmony in design</li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
-                    <div className="bg-white p-6 rounded-lg shadow">
-                        <h3 className="text-xl font-bold mb-4">Step 2: Master Design Tools</h3>
-                        <p className="text-gray-700">
-                            Get hands-on experience with industry-standard tools like Adobe Photoshop, Illustrator, Figma, and Canva. Learn how to use these tools to bring your creative ideas to life.
-                        </p>
+
+                    {/* Step 2: Design Tools & Software */}
+                    <div className="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow">
+                        <h3 className="text-xl font-bold mb-4 text-[#C24914]">Step 2: Master Design Tools & Software</h3>
+                        <div className="space-y-4">
+                            <div>
+                                <h4 className="font-semibold mb-2">Adobe Creative Suite</h4>
+                                <ul className="list-disc pl-5 text-gray-700">
+                                    <li>Photoshop for image editing and design</li>
+                                    <li>Illustrator for vector graphics</li>
+                                    <li>InDesign for layout and publications</li>
+                                    <li>XD for UI/UX prototyping</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h4 className="font-semibold mb-2">Modern Design Tools</h4>
+                                <ul className="list-disc pl-5 text-gray-700">
+                                    <li>Figma for collaborative design</li>
+                                    <li>Sketch for interface design</li>
+                                    <li>Canva for quick design solutions</li>
+                                    <li>Affinity Suite as Adobe alternatives</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h4 className="font-semibold mb-2">Additional Tools</h4>
+                                <ul className="list-disc pl-5 text-gray-700">
+                                    <li>Prototyping tools (Prototype.io, Framer)</li>
+                                    <li>Animation tools (After Effects, Lottie)</li>
+                                    <li>Screen design and wireframing</li>
+                                    <li>Asset management and version control</li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
-                    <div className="bg-white p-6 rounded-lg shadow">
-                        <h3 className="text-xl font-bold mb-4">Step 3: Understand User Experience (UX)</h3>
-                        <p className="text-gray-700">
-                            Dive into the principles of UX design. Learn how to create user-friendly interfaces and experiences that prioritize usability and accessibility.
-                        </p>
+
+                    {/* Step 3: User Experience (UX) Design */}
+                    <div className="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow">
+                        <h3 className="text-xl font-bold mb-4 text-[#C24914]">Step 3: User Experience (UX) Design</h3>
+                        <div className="space-y-4">
+                            <div>
+                                <h4 className="font-semibold mb-2">UX Research & Analysis</h4>
+                                <ul className="list-disc pl-5 text-gray-700">
+                                    <li>User research methodologies</li>
+                                    <li>Persona creation and analysis</li>
+                                    <li>User journeys and mapping</li>
+                                    <li>Usability testing and feedback</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h4 className="font-semibold mb-2">Wireframing & Prototyping</h4>
+                                <ul className="list-disc pl-5 text-gray-700">
+                                    <li>Low-fidelity wireframes</li>
+                                    <li>Information architecture</li>
+                                    <li>Interactive prototypes</li>
+                                    <li>Design systems and components</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h4 className="font-semibold mb-2">Accessibility & Inclusivity</h4>
+                                <ul className="list-disc pl-5 text-gray-700">
+                                    <li>WCAG guidelines and standards</li>
+                                    <li>Color contrast and readability</li>
+                                    <li>Keyboard navigation</li>
+                                    <li>Screen reader optimization</li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
-                    <div className="bg-white p-6 rounded-lg shadow">
-                        <h3 className="text-xl font-bold mb-4">Step 4: Work on Real-World Projects</h3>
-                        <p className="text-gray-700">
-                            Apply your skills by working on real-world projects, such as designing logos, websites, and marketing materials. Build a portfolio that showcases your creativity and expertise.
-                        </p>
+
+                    {/* Step 4: User Interface (UI) Design */}
+                    <div className="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow">
+                        <h3 className="text-xl font-bold mb-4 text-[#C24914]">Step 4: User Interface (UI) Design</h3>
+                        <div className="space-y-4">
+                            <div>
+                                <h4 className="font-semibold mb-2">Interface Design</h4>
+                                <ul className="list-disc pl-5 text-gray-700">
+                                    <li>Button design and interaction states</li>
+                                    <li>Form design and validation</li>
+                                    <li>Navigation patterns and menus</li>
+                                    <li>Icons and visual elements</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h4 className="font-semibold mb-2">Responsive Design</h4>
+                                <ul className="list-disc pl-5 text-gray-700">
+                                    <li>Mobile-first design approach</li>
+                                    <li>Breakpoints and responsive layouts</li>
+                                    <li>Touch interface design</li>
+                                    <li>Cross-device consistency</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h4 className="font-semibold mb-2">Design Systems</h4>
+                                <ul className="list-disc pl-5 text-gray-700">
+                                    <li>Component libraries and style guides</li>
+                                    <li>Design tokens and variables</li>
+                                    <li>Atomic design methodology</li>
+                                    <li>Documentation and handoff</li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
-                    <div className="bg-white p-6 rounded-lg shadow">
-                        <h3 className="text-xl font-bold mb-4">Step 5: Learn Advanced Techniques</h3>
-                        <p className="text-gray-700">
-                            Explore advanced design techniques, such as motion graphics, 3D design, and branding strategies. Stay updated with the latest trends in the design industry.
-                        </p>
+
+                    {/* Step 5: Advanced Design Techniques */}
+                    <div className="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow">
+                        <h3 className="text-xl font-bold mb-4 text-[#C24914]">Step 5: Advanced Design Techniques</h3>
+                        <div className="space-y-4">
+                            <div>
+                                <h4 className="font-semibold mb-2">Motion & Animation</h4>
+                                <ul className="list-disc pl-5 text-gray-700">
+                                    <li>CSS animations and transitions</li>
+                                    <li>Micro-interactions and feedback</li>
+                                    <li>Motion graphics fundamentals</li>
+                                    <li>After Effects for animation</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h4 className="font-semibold mb-2">Branding & Identity</h4>
+                                <ul className="list-disc pl-5 text-gray-700">
+                                    <li>Logo design principles</li>
+                                    <li>Brand guidelines and identity systems</li>
+                                    <li>Visual brand storytelling</li>
+                                    <li>Brand consistency across channels</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h4 className="font-semibold mb-2">Advanced Design Areas</h4>
+                                <ul className="list-disc pl-5 text-gray-700">
+                                    <li>3D design and visualization</li>
+                                    <li>Data visualization and infographics</li>
+                                    <li>Web design trends and best practices</li>
+                                    <li>Print design and production</li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
-                    <div className="bg-white p-6 rounded-lg shadow">
-                        <h3 className="text-xl font-bold mb-4">Step 6: Build Your Portfolio</h3>
-                        <p className="text-gray-700">
-                            Create a professional portfolio that highlights your best work. Showcase your skills to potential clients or employers and start your journey as a professional designer.
-                        </p>
+                               
+                    {/* Step 6: Professional Development & Portfolio */}
+                    <div className="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow">
+                        <h3 className="text-xl font-bold mb-4 text-[#C24914]">Step 6: Portfolio & Professional Development</h3>
+                        <div className="space-y-4">
+                            <div>
+                                <h4 className="font-semibold mb-2">Portfolio Building</h4>
+                                <ul className="list-disc pl-5 text-gray-700">
+                                    <li>Case study creation and documentation</li>
+                                    <li>Project showcase and presentation</li>
+                                    <li>Personal portfolio website design</li>
+                                    <li>Design portfolio platforms (Dribbble, Behance)</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h4 className="font-semibold mb-2">Real-World Projects</h4>
+                                <ul className="list-disc pl-5 text-gray-700">
+                                    <li>Logo and branding projects</li>
+                                    <li>Website design and development</li>
+                                    <li>App UI/UX design</li>
+                                    <li>Marketing collateral design</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h4 className="font-semibold mb-2">Career Development</h4>
+                                <ul className="list-disc pl-5 text-gray-700">
+                                    <li>Freelancing and client management</li>
+                                    <li>Interview preparation</li>
+                                    <li>Industry networking and communities</li>
+                                    <li>Staying updated with design trends</li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
