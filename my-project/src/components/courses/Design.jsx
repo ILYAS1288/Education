@@ -203,8 +203,7 @@ export function Design() {
                                 </ul>
                             </div>
                         </div>
-                    </div>
-                               
+                    </div>              
                     {/* Step 6: Professional Development & Portfolio */}
                     <div className="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow">
                         <h3 className="text-xl font-bold mb-4 text-[#C24914]">Step 6: Portfolio & Professional Development</h3>
