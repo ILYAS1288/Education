@@ -13,7 +13,6 @@ export function Footer() {
                         Educare is your trusted platform for learning and growth. Join us to explore endless opportunities.
                     </p>
                 </div>
-                {/* Quick Links */}
                 <div className="flex flex-col items-center md:items-start">
                     <h2 className="text-lg font-bold mb-4">Quick Links</h2>
                     <ul className="space-y-2">

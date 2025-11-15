@@ -11,7 +11,7 @@ export default function News() {
                         We are excited to announce the launch of our new course on Artificial Intelligence, designed to equip learners with cutting-edge skills in AI development and applications.
                     </p>
                     <button className="mt-4 bg-[#C24914] text-white px-4 py-2 rounded-md shadow hover:bg-[#a63a0b] transition">
-                        Read More
+                                   Read More
                     </button>
                 </div>
                 {/* News Article  */}
